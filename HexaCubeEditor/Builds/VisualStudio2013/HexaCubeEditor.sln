@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2013
+Project("{FD71613A-B0BD-7DA7-E7D7-53203FA67102}") = "HexaCubeEditor", "HexaCubeEditor.vcxproj", "{EEB576B6-D444-51CC-88BE-60354E276CB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEB576B6-D444-51CC-88BE-60354E276CB7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EEB576B6-D444-51CC-88BE-60354E276CB7}.Debug|Win32.Build.0 = Debug|Win32
+		{EEB576B6-D444-51CC-88BE-60354E276CB7}.Release|Win32.ActiveCfg = Release|Win32
+		{EEB576B6-D444-51CC-88BE-60354E276CB7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
