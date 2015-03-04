@@ -28,7 +28,7 @@ public:
     {
         // This method is where you should put your application's initialisation code..
 
-        mainWindow = new MainWindow (getApplicationName());
+        mainWindow = new MainWindow ("Ild"/*getApplicationName()*/);
     }
 
     void shutdown() override
@@ -62,8 +62,8 @@ public:
     {
     public:
         MainWindow (String name)  : DocumentWindow (name,
-                                                    Colours::lightgrey,
-                                                    DocumentWindow::allButtons)
+                                                    Colours::black,
+                                                    DocumentWindow::minimiseButton|DocumentWindow::closeButton)
         {
             setUsingNativeTitleBar (true);
             setContentOwned (new MainContentComponent(), true);

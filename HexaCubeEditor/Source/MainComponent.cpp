@@ -12,7 +12,7 @@
 //==============================================================================
 MainContentComponent::MainContentComponent()
 {
-    setSize (600, 400);
+    setSize (375, 667);
 }
 
 MainContentComponent::~MainContentComponent()
@@ -21,7 +21,7 @@ MainContentComponent::~MainContentComponent()
 
 void MainContentComponent::paint (Graphics& g)
 {
-    g.fillAll (Colour (0xff001F36));
+    g.fillAll (Colours::darkgrey);
 
     g.setFont (Font (16.0f));
     g.setColour (Colours::white);
