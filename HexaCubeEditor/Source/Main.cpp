@@ -19,7 +19,7 @@ public:
     //==============================================================================
     HexaCubeEditorApplication() {}
 
-    const String getApplicationName() override       { return ProjectInfo::projectName; }
+    const String getApplicationName() override       { return "Ild"; }
     const String getApplicationVersion() override    { return ProjectInfo::versionString; }
     bool moreThanOneInstanceAllowed() override       { return true; }
 
@@ -28,7 +28,7 @@ public:
     {
         // This method is where you should put your application's initialisation code..
 
-        mainWindow = new MainWindow ("Ild"/*getApplicationName()*/);
+        mainWindow = new MainWindow (getApplicationName());
     }
 
     void shutdown() override

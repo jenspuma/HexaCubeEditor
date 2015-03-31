@@ -301,6 +301,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\Matrix.cpp">
+      <Filter>HexaCubeEditor\Source</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MainComponent.cpp">
       <Filter>HexaCubeEditor\Source</Filter>
     </ClCompile>
@@ -1518,6 +1521,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\Matrix.h">
+      <Filter>HexaCubeEditor\Source</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\MainComponent.h">
       <Filter>HexaCubeEditor\Source</Filter>
     </ClInclude>

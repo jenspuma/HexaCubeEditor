@@ -12,7 +12,9 @@
 //==============================================================================
 MainContentComponent::MainContentComponent()
 {
-    setSize (375, 667);
+  addAndMakeVisible(m_Matrix);
+
+  setSize (375, 667);
 }
 
 MainContentComponent::~MainContentComponent()
@@ -21,11 +23,8 @@ MainContentComponent::~MainContentComponent()
 
 void MainContentComponent::paint (Graphics& g)
 {
-    g.fillAll (Colours::darkgrey);
+    g.fillAll (Colours::darkgrey.darker(3.f));
 
-    g.setFont (Font (16.0f));
-    g.setColour (Colours::white);
-    g.drawText ("Hello World!", getLocalBounds(), Justification::centred, true);
 }
 
 void MainContentComponent::resized()
@@ -33,4 +32,6 @@ void MainContentComponent::resized()
     // This is called when the MainContentComponent is resized.
     // If you add any child components, this is where you should
     // update their positions.
+
+  m_Matrix.setBounds(0.05 * getWidth(), 0.05 * getWidth(), 0.9 * getWidth(), 0.9 * getWidth());
 }
