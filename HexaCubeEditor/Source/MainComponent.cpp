@@ -13,17 +13,18 @@
 MainContentComponent::MainContentComponent()
 {
   addAndMakeVisible(m_Matrix);
+  addAndMakeVisible(m_FuncitonCombo);
 
   setSize (375, 667);
 }
 
 MainContentComponent::~MainContentComponent()
 {
-}
+} 
 
 void MainContentComponent::paint (Graphics& g)
 {
-    g.fillAll (Colours::darkgrey.darker(3.f));
+    g.fillAll (findColour(ResizableWindow::backgroundColourId));
 
 }
 
@@ -33,5 +34,10 @@ void MainContentComponent::resized()
     // If you add any child components, this is where you should
     // update their positions.
 
-  m_Matrix.setBounds(0.05 * getWidth(), 0.05 * getWidth(), 0.9 * getWidth(), 0.9 * getWidth());
+  int spacer = (int)(0.05 * getWidth());
+  int w      = (int)(0.9 * getWidth());
+
+  m_Matrix.setBounds(spacer, spacer, w, w);
+
+  m_FuncitonCombo.setBounds(spacer, m_Matrix.getBottom() + 2*spacer, w, 22);
 }

@@ -10,6 +10,7 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "MainComponent.h"
+#include "ColourScheme.h"
 
 
 //==============================================================================
@@ -24,9 +25,10 @@ public:
     bool moreThanOneInstanceAllowed() override       { return true; }
 
     //==============================================================================
-    void initialise (const String& commandLine) override
+    void initialise (const String& /*commandLine*/) override
     {
-        // This method is where you should put your application's initialisation code..
+        LookAndFeel::setDefaultLookAndFeel(&lnf);
+        ColourScheme::applyColourScheme(LookAndFeel::getDefaultLookAndFeel());
 
         mainWindow = new MainWindow (getApplicationName());
     }
@@ -46,7 +48,7 @@ public:
         quit();
     }
 
-    void anotherInstanceStarted (const String& commandLine) override
+    void anotherInstanceStarted (const String& /*commandLine*/) override
     {
         // When another instance of the app is launched while this one is running,
         // this method is invoked, and the commandLine parameter tells you what
@@ -65,7 +67,7 @@ public:
                                                     Colours::black,
                                                     DocumentWindow::minimiseButton|DocumentWindow::closeButton)
         {
-            setUsingNativeTitleBar (true);
+            setUsingNativeTitleBar (false);
             setContentOwned (new MainContentComponent(), true);
 
             centreWithSize (getWidth(), getHeight());
@@ -89,10 +91,12 @@ public:
 
     private:
         JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainWindow)
+
     };
 
 private:
     ScopedPointer<MainWindow> mainWindow;
+    LookAndFeel_V3 lnf;
 };
 
 //==============================================================================

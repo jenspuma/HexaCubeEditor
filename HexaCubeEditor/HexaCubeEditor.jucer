@@ -5,6 +5,7 @@
               jucerVersion="3.1.1" companyName="Four Drops Instruments">
   <MAINGROUP id="wRwOMq" name="HexaCubeEditor">
     <GROUP id="{D2B18491-D762-E2C5-A4B3-48E4BC939939}" name="Source">
+      <FILE id="k9iE9N" name="ColourScheme.h" compile="0" resource="0" file="Source/ColourScheme.h"/>
       <FILE id="N8KYX9" name="Matrix.cpp" compile="1" resource="0" file="Source/Matrix.cpp"/>
       <FILE id="CzCrwI" name="Matrix.h" compile="0" resource="0" file="Source/Matrix.h"/>
       <FILE id="oUlrjO" name="MainComponent.cpp" compile="1" resource="0"

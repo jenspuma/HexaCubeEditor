@@ -1242,6 +1242,7 @@
     <ClCompile Include="..\..\..\JUCE\modules\juce_video\juce_video.cpp"/>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\ColourScheme.h"/>
     <ClInclude Include="..\..\Source\Matrix.h"/>
     <ClInclude Include="..\..\Source\MainComponent.h"/>
     <ClInclude Include="..\..\..\JUCE\modules\juce_audio_basics\buffers\juce_AudioDataConverters.h"/>

@@ -1521,6 +1521,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\ColourScheme.h">
+      <Filter>HexaCubeEditor\Source</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Matrix.h">
       <Filter>HexaCubeEditor\Source</Filter>
     </ClInclude>

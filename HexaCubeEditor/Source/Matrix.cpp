@@ -46,10 +46,10 @@ void Matrix::resized()
     int col = i & 0x03;
     int row = i >> 2;
 
-    int x = (0.08 + col*(0.22))*getWidth();
-    int y = (0.08 + row*(0.22))*getHeight();
+    int x = (int)((0.08 + col*(0.22))*getWidth());
+    int y = (int)((0.08 + row*(0.22))*getHeight());
 
-    m_buttonRect[i].setBounds(x, y, 0.18*getWidth(), 0.18*getHeight());
+    m_buttonRect[i].setBounds(x, y, (int)(0.18*getWidth()), (int)(0.18*getHeight()));
   }
 }
 
